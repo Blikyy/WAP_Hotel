@@ -48,10 +48,14 @@ a {
   display: none;
 }
 
-.img_con {
-  margin-top: 2%;
-  width: 100%;
-  height: 350px;
+.nadpis {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 5%;
+}
+
+.main_container {
+  margin-top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,46 +67,60 @@ a {
           align-items: center;
 }
 
-.blur {
-  background: url(images/hotel0.5.jpg) no-repeat center;
-  background-size: cover;
-  -webkit-filter: blur(13px);
-  position: absolute;
-  width: 100%;
-  height: 350px;
-}
-
-.img_con h1 {
-  color: black;
-  font-size: 50px;
-  font-weight: bold;
-  position: relative;
-  position: absolute;
-  z-index: 9999;
-  -webkit-filter: blur(0px);
-}
-
 .container {
-  margin-top: 10%;
-  width: 100%;
+  width: 35%;
   height: 500px;
+  display: block;
   background-color: white;
 }
 
-.nadpis {
-  margin-top: 5%;
+.container h1 {
   text-align: center;
 }
 
-.text_box {
-  margin-top: 3%;
-  width: 50%;
-  margin-left: 25%;
+.container h3 {
+  text-align: left;
 }
 
-.text1 {
+.container p {
+  padding-top: 3%;
+  padding-left: 1%;
+}
+
+.container2 {
+  margin-left: 10%;
+  width: 35%;
+  height: 250px;
+  display: inline-block;
+  background-color: white;
+}
+
+.container2 h1 {
   text-align: center;
-  font-size: 25px;
+}
+
+.container2 h3 {
+  padding-left: 1%;
+}
+
+.container2 p {
+  padding-top: 3%;
+  padding-left: 1%;
+}
+
+.pronajem {
+  width: 100%;
+  height: 700px;
+  background-color: white;
+}
+
+.pronajem h1 {
+  padding-top: 3%;
+  text-align: center;
+}
+
+.pronajem p {
+  text-align: center;
 }
 
 .footer_con1 {
@@ -189,7 +207,7 @@ footer {
     display: none;
     position: absolute;
     background-color: #d1d1d1;
-    max-width: 200px;
+    max-width: 250px;
     -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -205,4 +223,25 @@ footer {
     display: block;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 900px) {
+  .main_container {
+    display: block;
+    text-align: center;
+  }
+  .container {
+    height: 600px;
+    width: 100%;
+  }
+  .container h3 {
+    text-align: center;
+  }
+  .container2 {
+    width: 100%;
+    margin-left: 0;
+  }
+  .pronajem {
+    height: 900px;
+  }
+}
+/*# sourceMappingURL=sluzby.css.map */
